@@ -99,7 +99,7 @@ def write_output(records: list[ET.Element], output_path: str, base_url: str) -> 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Harvest all OAI-PMH records from an endpoint and save merged XML.")
     parser.add_argument("--base_url", default="https://opus4.kobv.de/opus4-hs-augsburg/oai", help="OAI-PMH base URL, e.g. https://opus4.kobv.de/opus4-hs-augsburg/oai")
-    parser.add_argument("--output", default="tha-oai.xml", help="Output XML file path")
+    parser.add_argument("--output", default="tha-oai.xml", help="Output XML file")
     parser.add_argument("--metadata-prefix", default=METADATA_PREFIX, help="metadataPrefix to request (default: oai_dc)")
     return parser.parse_args()
 
